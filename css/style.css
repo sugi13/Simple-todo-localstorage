@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: black;
+  color: #DEFCFE;
+  font-family: 'Roboto Mono', monospace;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+header h1{
+    font-family: 'Raleway', sans-serif;
+}
+header div{
+  display: flex;
+  gap: 15px;
+}
+header input{
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Roboto Mono', monospace;
+}
+header input:focus{
+  outline: none;
+}
+header #add-btn{
+  padding: 8px;
+  background: white;
+  border:none;
+  border-radius: 5px;
+  font-family: 'Roboto Mono', monospace;
+  border-radius: 5px;
+}
+
+/* section */
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.task-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+.task-container li{
+  margin-top: 30px;
+  color: #DEFCFE;
+  list-style: none;
+  width: inherit;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: 'Raleway', sans-serif;
+  background: rgb(1, 1, 49);
+  text-align: center;
+}
+.task-container p{
+  font-size: .8rem;
+  text-align: start;
+  opacity: .5;
+  position: relative;
+  left: -20px;
+}
+#remove-All{
+  border:none;
+  background:darkred;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'Roboto Mono', monospace;
+  margin-top: 50px;
+}
+
+
+@media screen and (max-width: 578px) {
+
+  header{
+    gap: 20px;
+  }
+
+  header h1{
+    font-size: 1.4rem;
+  }
+
+  section{
+    margin-top: 50px;
+  }
+  .task-container {
+    width: 90%;
+  }
+  .task-container p{
+    position: relative;
+    left: 0;
+  }
+}
